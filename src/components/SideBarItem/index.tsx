@@ -3,6 +3,7 @@ import * as C from "./styles";
 import { ReactComponent as ProfileIcon } from "../../svgs/profile.svg";
 import { ReactComponent as BookIcon } from "../../svgs/book.svg";
 import { ReactComponent as ContactsIcon } from "../../svgs/mail.svg";
+import { ReactComponent as DoneIcon } from "../../svgs/icons8-checked.svg";
 
 type Props = {
     title: string;
@@ -46,6 +47,14 @@ export const SideBarItem = ({
                         <ContactsIcon
                             className="svg1"
                             fill="white"
+                            width={24}
+                            height={24}
+                        />
+                    )}
+                    {icon === "done" && (
+                        <DoneIcon
+                            className="svg1"
+                            fill="black"
                             width={24}
                             height={24}
                         />

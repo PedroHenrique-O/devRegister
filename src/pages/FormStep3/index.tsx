@@ -40,6 +40,7 @@ export const FormStep3 = () => {
 
     const handleNextStep = () => {
         if (state.name !== "" && state.github !== "") {
+            navigate("/step4");
             console.log(state);
         } else {
             alert("Preecha os dados!");
@@ -53,7 +54,7 @@ export const FormStep3 = () => {
     return (
         <Theme>
             <C.Container>
-                <p>Passo 3/3 {state.currentStep} </p>
+                <p>Passo 3/3 </p>
                 <h1> {state.name}, onde podemos te encontrar?</h1>
                 <p>Preencha as informações para que possamos lhe contatar.</p>
                 <hr />
