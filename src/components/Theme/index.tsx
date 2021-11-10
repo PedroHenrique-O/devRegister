@@ -17,7 +17,7 @@ export const Theme = ({ children }: Props) => {
                     <C.Sidebar>
                         <SideBarItem
                             title="Pessoal"
-                            description="Se identifique"
+                            description="Se identifique:"
                             icon="profile"
                             path="/"
                             active={state.currentStep === 1}
@@ -25,7 +25,7 @@ export const Theme = ({ children }: Props) => {
 
                         <SideBarItem
                             title="Profissional"
-                            description="Seu nível"
+                            description="Seu nível."
                             icon="book"
                             path="/step2"
                             active={state.currentStep === 2}
@@ -33,10 +33,17 @@ export const Theme = ({ children }: Props) => {
 
                         <SideBarItem
                             title="Contatos"
-                            description="Como te achar"
+                            description="Como te achar?"
                             icon="contacts"
                             path="/step3"
                             active={state.currentStep === 3}
+                        />
+                        <SideBarItem
+                            title="Cadastro"
+                            description="Cadastro finalizado!"
+                            icon="done"
+                            path="/step4"
+                            active={state.currentStep === 4}
                         />
                     </C.Sidebar>
                     <C.Page>{children}</C.Page>
