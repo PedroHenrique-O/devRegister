@@ -7,7 +7,7 @@
 
 <h1>About the application: </h1>
 
-<p>devRegister é uma formulário de três etapas para cadastro de informações.
+<p>devRegister é um formulário de três etapas para cadastro de informações.</p>
 
 <h1> How to install </h1>
 
